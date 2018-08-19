@@ -25,9 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
         img_orange.classList.remove("active")
 
     })
-    btn_prev.addEventListener("click",function () {
+    btn_prev.addEventListener("click", function () {
         img_chair.classList.remove("active");
         img_orange.classList.add("active")
     })
+    var midImg = document.querySelector(".midImg")
+    var midImg2 = document.querySelector(".midImg2")
+    var first_transparent = document.querySelector(".midImg .transparent")
+    var mid_transparent = document.querySelector(".midImg2 .transparent")
 
+    midImg.addEventListener("mouseover", function () {
+        first_transparent.style.opacity = "0";
+    })
+    midImg.addEventListener("mouseleave", function () {
+        first_transparent.style.opacity = "1"
+    })
+    midImg2.addEventListener("mouseover", function () {
+        mid_transparent.style.opacity = "0"
+    })
+    midImg2.addEventListener("mouseleave", function () {
+        mid_transparent.style.opacity = "1"
+    })
 })

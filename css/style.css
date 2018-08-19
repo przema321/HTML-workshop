@@ -217,16 +217,18 @@ section{
 
 .midImg{
 background: url("../images/box1_img.jpg");
-    height: 300px;
-    width: 400px;
+    height: 225px;
+    width: 329px;
     background-repeat: no-repeat;
+
 }
 
 .midImg2{
     background: url("../images/box2_img.jpg");
-    height: 300px;
-    width: 400px;
+    height: 225px;
+    width: 329px;
     background-repeat: no-repeat;
+    margin-left: 70px;
 }
 
 .midText{
@@ -234,6 +236,7 @@ background: url("../images/box1_img.jpg");
     width: 400px;
     border: 1px solid #E3E3E3;
     padding: 0 30px;
+    margin-left: 70px;
 }
 
 .transparent{
@@ -241,6 +244,8 @@ background: url("../images/box1_img.jpg");
     height: 60px;
     background:rgba(255,255,255, 0.3);
     margin-top: 150px;
+    opacity: 1;
+    transition: 1s;
 }
 
 .midImg .midLine{
