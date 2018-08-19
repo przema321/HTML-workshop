@@ -15,9 +15,37 @@
 }
 body{
     font-family: "Raleway", sans-serif;
-
 }
 
+/*.dropsow{*/
+    /*position: absolute;*/
+    /*top: 8%;*/
+    /*color: black;*/
+/*}*/
+
+.dropdown{
+    /*flex-direction: column;*/
+    position: absolute;
+    background-color: black ;
+    top: 40px;
+    width: 100px;
+    cursor: pointer;
+    opacity: 0;
+    /*display: flex;*/
+    transition: 1s;
+    list-style: none;
+    pointer-events: none;
+}
+
+.dropdown li{
+   color: #FFFFFF;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.cpn{
+    cursor: pointer;
+    position: relative;
+}
 header{
     max-width: 100%;
     background: black;
@@ -66,7 +94,13 @@ section{
     background-repeat: no-repeat;
     margin-top: 80px;
 }
-
+.img-orange{
+    background: url("../images/orange_chair.png");
+    height: 400px;
+    width: 50%;
+    background-repeat:no-repeat;
+    margin-top: 80px;
+}
 .fluid__text{
     text-align: center;
     padding-top: 20px;
@@ -791,4 +825,12 @@ input[type='submit']{
 
 .footer__sign{
     font-weight: 600;
+}
+
+.active{
+    display: none;
+}
+
+.inactive{
+    display: flex;
 }
